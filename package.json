@@ -1,0 +1,38 @@
+{
+  "name": "etymonline",
+  "version": "1.0.0",
+  "description": "50,000 English word etymologies, dutifully collected from etymonline.com",
+  "main": "index.json",
+  "scripts": {
+    "paginate": "node paginate.js > letters.json",
+    "fetch": "node fetch.js",
+    "parse": "node parse.js > index.json",
+    "test": "node test.js | tap-spec"
+  },
+  "repository": "https://github.com/zeke/etymonline",
+  "homepage": "http://etymonline.com",
+  "keywords": [
+    "etymology",
+    "definitions",
+    "meaning",
+    "words",
+    "language",
+    "english",
+    "history",
+    "data"
+  ],
+  "author": "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "async": "^2.0.0-rc.6",
+    "cheerio": "^0.21.0",
+    "glob": "^7.0.3",
+    "got": "^6.3.0",
+    "limiter": "^1.1.0",
+    "lodash.sortby": "^4.5.0",
+    "omit-empty": "^0.4.1",
+    "path-exists": "^3.0.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.5.1"
+  }
+}

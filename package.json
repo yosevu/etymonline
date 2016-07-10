@@ -1,7 +1,7 @@
 {
   "name": "etymonline",
   "version": "1.0.0",
-  "description": "50,000 English word etymologies, dutifully collected from etymonline.com",
+  "description": "46,000 English word etymologies, dutifully collected from etymonline.com",
   "main": "index.json",
   "scripts": {
     "paginate": "node paginate.js > letters.json",
